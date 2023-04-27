@@ -41,7 +41,7 @@ const NavBar = () => {
             <div className="logo">
                 <h1 className='text-3xl text-white font-bold'>R<span className='text-[#2AAFC0]'>.</span></h1>
             </div>
-            <div className="text">
+            <div className="text hidden md:block">
                 <ul className='flex justify-between text-white text-sm'>
                     {portfolioNavbar.map((item, index) => (
                         <li className='mx-5 text-[16px] font-semibold' key={index}>
