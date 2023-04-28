@@ -7,8 +7,8 @@ import LazyLoad from 'react-lazy-load';
 const HappyClient = () => {
     return (
         <LazyLoad>
-            <div className=' bg-opacity-80 flex justify-around items-center bg-[#1C3037] h-[15rem]'>
-                <div className="flex flex-col justify-center items-center">
+            <div className=' py-5 bg-opacity-90 flex flex-col md:flex-wrap md:flex-row  gap-6 h-auto justify-around items-center bg-[#1C3037] lg:h-[18rem]'>
+                <div className="flex  flex-col justify-center items-center">
                     <GiSelfLove className='text-5xl text-primary' />
                     <h1 className='text-5xl text-white'><CountUp duration={2.75} end={80} /></h1>
                     <div className="border-b-[3px] mt-2 w-10 border-primary"></div>

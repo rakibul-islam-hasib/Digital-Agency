@@ -12,6 +12,7 @@ export default {
       },
       colors :{
         'primary': '#2AAFC0',
+        'light': '#757575',
       }
 
     },

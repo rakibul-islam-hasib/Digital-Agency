@@ -3,6 +3,7 @@ import NavBar from './Components/NavBar';
 import Hero from './Components/Hero';
 import Story from './Components/Story';
 import HappyClient from './Components/HappyClient';
+import OurService from './Components/OurService';
 
 function App() {
   const [navBackground, setNavBackground] = useState('bg-[#343D47]'); // Initial background color of the nav element
@@ -36,8 +37,11 @@ function App() {
       <div className="mb-7">
         <Story /> 
       </div>
-      <div className="bg-happy-customer bg-fixed  bg-cover h-60">
+      <div className="bg-happy-customer bg-fixed  bg-cover h-auto  lg:h-72">
         <HappyClient />
+      </div>
+      <div className="">
+        <OurService />
       </div>
     </>
   )
