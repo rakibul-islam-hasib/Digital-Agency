@@ -9,6 +9,7 @@ export default {
       backgroundImage : {
         'hero-pattern': "url('./src/assets/img1.png')",
         'happy-customer': "url('./src/assets/happy-client.jpg')",
+        'contact-us': "url('./src/assets/contact_us.jpg')",
       },
       colors :{
         'primary': '#2AAFC0',

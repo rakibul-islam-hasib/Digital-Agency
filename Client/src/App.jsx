@@ -4,6 +4,7 @@ import Hero from './Components/Hero';
 import Story from './Components/Story';
 import HappyClient from './Components/HappyClient';
 import OurService from './Components/OurService';
+import ContactUS from './Components/ContactUS';
 
 function App() {
   const [navBackground, setNavBackground] = useState('bg-[#343D47]'); // Initial background color of the nav element
@@ -42,6 +43,9 @@ function App() {
       </div>
       <div className="">
         <OurService />
+      </div>
+      <div className="bg-contact-us h-auto md:h-80 bg-fixed bg-cover">
+        <ContactUS /> 
       </div>
     </>
   )

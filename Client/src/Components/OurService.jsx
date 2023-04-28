@@ -41,8 +41,8 @@ const OurService = () => {
             <div className="grid gap-8 lg:grid-cols-2">
                     <div className="grid md:grid-cols-2 gap-7">
                         {
-                            services.map(item => { 
-                                return (<div className='flex flex-col px-3 py-4 justify-center items-center text-center border rounded-2xl'>
+                            services.map((item , i) => { 
+                                return (<div key={i} className='flex flex-col px-3 py-4 justify-center items-center text-center border rounded-2xl'>
                                     <img src={item.img} className='w-[35px] h-[35px]' alt="" />
                                     <h1 className='text-primary font-bold text-xl my-3'>{item.name}</h1>
                                     <p className='text-light'>{item.details}</p>
