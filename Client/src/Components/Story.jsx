@@ -31,7 +31,7 @@ const Story = () => {
                     <p className='text-lg my-5'>Lorem ipsum dolor  ullam quaerat optio voluptatibus ipsam voluptatem quo obcaecati eius commodi recusandae eaque laborum inventore, dicta error!</p>
                 </div>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 w-[80%] md:w-full mx-auto gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 w-[80%] md:w-full mx-auto md:gap-6">
                 {
                     storySection.map((item, index) => (
                         <div className='flex flex-col border justify-center items-center py-8 text-center rounded-lg my-10' key={index}>
