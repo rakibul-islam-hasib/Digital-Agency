@@ -6,6 +6,7 @@ import HappyClient from './Components/HappyClient';
 import OurService from './Components/OurService';
 import ContactUS from './Components/ContactUS';
 import Portfolio from './Components/Portfolio';
+import PortfolioCard from './Components/PortfolioCard';
 
 function App() {
   const [navBackground, setNavBackground] = useState('bg-[#343D47]'); // Initial background color of the nav element
@@ -29,7 +30,7 @@ function App() {
   return (
     <>
       <div className=" h-screen bg-hero-pattern bg-cover bg-fixed">
-        <div id='nav' className={`fixed w-full top-0 bg-opacity-70 ${navBackground}`}>
+        <div id='nav' className={`fixed z-20 w-full top-0 bg-opacity-70 ${navBackground}`}>
           <NavBar /> 
         </div>
         <div className="bg-[#42484F] bg-opacity-40">
@@ -50,6 +51,7 @@ function App() {
       </div>
       <div className="">
         <Portfolio /> 
+        <PortfolioCard /> 
       </div>
     </>
   )
