@@ -1,10 +1,4 @@
 import React from 'react';
-import img1 from '../assets/portfolio/img (1).jpg';
-import img2 from '../assets/portfolio/img (2).jpg';
-import img3 from '../assets/portfolio/img (3).jpg';
-import img4 from '../assets/portfolio/img (4).jpg';
-import img5 from '../assets/portfolio/img (5).jpg';
-import img6 from '../assets/portfolio/img (6).jpg';
 import LazyLoad from 'react-lazy-load';
 
 const portfolio = [
@@ -49,10 +43,10 @@ const portfolio = [
 const PortfolioCard = () => {
     return (
         <LazyLoad>
-            <div className='grid gap-5 grid-cols-3 w-[85%] mx-auto'>
+            <div className='grid gap-5 md:grid-cols-2 lg:grid-cols-3 w-[85%] mx-auto'>
                 {
                     portfolio.map((item, index) => (
-                            <div key={index} className="box">
+                            <div  data-aos="fade-left" key={index} className="box">
                                 <img draggable="false" src={item.image} alt="" />
                                 <h3>{item.title}</h3>
                                 <div className="icons">
